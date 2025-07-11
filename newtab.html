@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Tab</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Sidebar Navigation -->
+    <div class="navigation">
+        <ul>
+            <li class="list active" data-target="home-view">
+                <a href="#">
+                    <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                    <span class="title">Home</span>
+                </a>
+            </li>
+            <li class="list" data-target="timer-view">
+                <a href="#">
+                    <span class="icon"><ion-icon name="hourglass-outline"></ion-icon></span>
+                    <span class="title">Timer</span>
+                </a>
+            </li>
+            <li class="list" data-target="focus-view">
+                <a href="#">
+                    <span class="icon"><ion-icon name="bulb-outline"></ion-icon></span>
+                    <span class="title">Focus</span>
+                </a>
+            </li>
+            <li class="list" data-target="kanban-view">
+                <a href="#">
+                    <span class="icon"><ion-icon name="easel-outline"></ion-icon></span>
+                    <span class="title">Kanban</span>
+                </a>
+            </li>
+            <li class="list" data-target="organizer-view">
+                <a href="#">
+                    <span class="icon"><ion-icon name="library-outline"></ion-icon></span>
+                    <span class="title">Organizer</span>
+                </a>
+            </li>
+            <li class="list" data-target="notes-view">
+                <a href="#">
+                    <span class="icon"><ion-icon name="reader-outline"></ion-icon></span>
+                    <span class="title">Notes</span>
+                </a>
+            </li>
+            <li class="list" data-target="lock-view">
+                <a href="#">
+                    <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                    <span class="title">Lock</span>
+                </a>
+            </li>
+            <li class="list" data-target="settings-view">
+                <a href="#">
+                    <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
+                    <span class="title">Settings</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Main Content Area -->
+    <div id="main-content">
+        <!-- Home View -->
+        <div id="home-view" class="view active-view">
+            <main>
+                <div class="time-container">
+                    <h1 id="time">12:00</h1>
+                    <!-- Clock start here -->
+                    <!-- <div class="container">
+                        <h2 id="hour">00</h2>
+                        <h2 class="dot">:</h2>
+                        <h2 id="minute">00</h2>
+                        <h2 class="dot">:</h2>
+                        <h2 id="seconds">00</h2>
+                        <span id="ampm">AM</span>
+                    </div> -->
+                    <!-- clock end here -->
+                    <p id="greeting">Good Afternoon, User.</p>
+                </div>
+                <div class="focus-container">
+                    <h2>What is your main focus for today?</h2>
+                    <input type="text" id="focus-input" autocomplete="off" />
+                    <h3 id="focus-display"></h3>
+                </div>
+
+                <!-- NEW: Bookmarks Widget Container -->
+                <div id="bookmarks-widget-container">
+                    <div class="bookmarks-grid">
+                        <a href="https://www.youtube.com" class="bookmark-item" target="_blank">
+                            <ion-icon name="logo-youtube"></ion-icon>
+                            <span>YouTube</span>
+                        </a>
+                        <a href="https://www.github.com" class="bookmark-item" target="_blank">
+                            <ion-icon name="logo-github"></ion-icon>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://gemini.google.com/" class="bookmark-item" target="_blank">
+                            <ion-icon name="sparkles-outline"></ion-icon>
+                            <span>Gemini</span>
+                        </a>
+                        <div class="bookmark-item add-bookmark">
+                            <ion-icon name="add-outline"></ion-icon>
+                            <span>Add New</span>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <!-- Other Views (Placeholders) -->
+        <div id="timer-view" class="view"><h1>Timer</h1><p>Coming soon!</p></div>
+        <div id="focus-view" class="view"><h1>Focus</h1><p>Coming soon!</p></div>
+        <div id="kanban-view" class="view"><h1>Kanban</h1><p>Coming soon!</p></div>
+        <div id="organizer-view" class="view"><h1>Organizer</h1><p>Coming soon!</p></div>
+        <div id="notes-view" class="view"><h1>Notes</h1><p>Coming soon!</p></div>
+        <div id="lock-view" class="view"><h1>Lock</h1><p>Coming soon!</p></div>
+        <div id="settings-view" class="view"><h1>Settings</h1><p>Coming soon!</p></div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

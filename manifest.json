@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "MY-VIEW",
+    "version": "1.0",
+    "description": "custome new tab page",
+    "author": "HMW",
+    "chrome_url_overrides": {
+        "newtab": "newtab.html"
+    },
+    "permissions": [
+        "storage"
+    ],
+    "icons": {
+        
+    }
+}
